@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Mentions</title>
+</head>
+<body>
+    <h1>Instagram Mentions</h1>
+    <div id="mentions"></div>
+
+    <script>
+        // Fetch mentions using access token
+        const accessToken = "<?php echo isset($_SESSION['access_token']) ? $_SESSION['access_token'] : ''; ?>";
+        if (!accessToken) {
+            alert('Access token not found. Please authenticate with Instagram.');
+        } else {
+            fetchMentions(accessToken);
+        }
+
+        async function fetchMentions(token) {
+            const url = `https://graph.instagram.com/me/media?fields=caption&access_token=${token}`;
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const mentions = extractMentions(data.data);
+                displayMentions(mentions);
+            } catch (error) {
+                console.error('Error fetching mentions:', error);
+            }
+        }
+
+        function extractMentions(mediaData) {
+            const mentions = [];
+            mediaData.forEach(media => {
+                const caption = media.caption;
+                if (caption && caption.includes('@')) {
+                    const regex = /@([^\s]+)/g;
+                    let match;
+                    while ((match = regex.exec(caption)) !== null) {
+                        mentions.push(match[1]);
+                    }
+                }
+            });
+            return mentions;
+        }
+
+        function displayMentions(mentions) {
+            const mentionsElement = document.getElementById('mentions');
+            if (mentions.length === 0) {
+                mentionsElement.innerHTML = '<p>No mentions found.</p>';
+            } else {
+                const mentionsList = mentions.map(mention => `<p>${mention}</p>`).join('');
+                mentionsElement.innerHTML = mentionsList;
+            }
+        }
+    </script>
+</body>
+</html>
