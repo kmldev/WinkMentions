@@ -34,6 +34,6 @@ curl_close($curl);
 $_SESSION['access_token'] = json_decode($response)->access_token;
 
 // Redirect user to fetch_mentions.php
-header('Location: fetch_mentions.php');
+header('Location: fronend.html');
 exit();
 ?>
