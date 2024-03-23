@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 $clientId = '807919424489341';
 $clientSecret = 'f932eb1a52c50ddede29bba0328a27f2';
-$redirectUri = 'https://winkmentions-0e9019ab59d4.herokuapp.com/callback.php';
+$redirectUri = 'https://winkmentions-0e9019ab59d4.herokuapp.com';
 $authUrl = 'https://api.instagram.com/oauth/authorize';
 $tokenUrl = 'https://api.instagram.com/oauth/access_token';
 
