@@ -1,11 +1,12 @@
 <?php
 session_start();
+
 // Endpoint to receive webhook notifications for Instagram mentions
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
 
     // Extract data from the received notification
-    $urlMedia = $data['url_media'];
+    $urlMedia = $data['media_url'];
     $caption = $data['caption'];
     $username = $data['username'];
 
@@ -40,8 +41,8 @@ if (isset($_GET['code'])) {
     // Store access token in session (you might want to store it in a database)
     $_SESSION['access_token'] = json_decode($response)->access_token;
 
-    // Redirect to frontend
-    header('Location: mentions.html');
+    // Redirect to frontend or wherever you want to handle the access token
+    header('Location: frontend.html');
     exit();
 }
 
