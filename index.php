@@ -2,9 +2,9 @@
 session_start();
 
 // Replace these with your actual app credentials
-$clientId = 'YOUR_FACEBOOK_APP_ID';
-$clientSecret = 'YOUR_FACEBOOK_APP_SECRET';
-$redirectUri = 'YOUR_CALLBACK_URL';
+$clientId = '944463346552351';
+$clientSecret = '5054166e9895b4e93359d385965e126e';
+$redirectUri = 'https://winkmentions-0e9019ab59d4.herokuapp.com/';
 
 // Check if user is already authenticated
 if (isset($_SESSION['access_token'])) {
