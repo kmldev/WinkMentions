@@ -1,4 +1,4 @@
-ons<?php
+<?php
 session_start();
 // Endpoint to receive webhook notifications for Instagram mentions
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
