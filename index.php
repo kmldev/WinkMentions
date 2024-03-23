@@ -42,7 +42,7 @@ if (isset($_GET['code'])) {
     $_SESSION['access_token'] = json_decode($response)->access_token;
 
     // Redirect to frontend or wherever you want to handle the access token
-    header('Location: mentions.html');
+    header('Location: index.html');
     exit();
 }
 
