@@ -4,7 +4,7 @@ session_start();
 // Replace these with your actual app credentials
 $clientId = '944463346552351';
 $clientSecret = '5054166e9895b4e93359d385965e126e';
-$redirectUri = 'https://winkmentions-0e9019ab59d4.herokuapp.com';
+$redirectUri = 'https://winkmentions-0e9019ab59d4.herokuapp.com/callback';
 
 // Check if authorization code is present
 if (!isset($_GET['code'])) {
