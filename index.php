@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Replace this with your actual logic to handle the webhook notification
 }
 
-$clientId = '944463346552351';
-$clientSecret = '5054166e9895b4e93359d385965e126e';
-$redirectUri = 'https://winkmentions-0e9019ab59d4.herokuapp.com';
+$clientId = '807919424489341';
+$clientSecret = 'f932eb1a52c50ddede29bba0328a27f2';
+$redirectUri = 'https://winkmentions-0e9019ab59d4.herokuapp.com/mentions.html';
 $authUrl = 'https://api.instagram.com/oauth/authorize';
 $tokenUrl = 'https://api.instagram.com/oauth/access_token';
 
