@@ -1,0 +1,58 @@
+{
+    "packages": [
+        {
+            "name": "jstolpe/instagram-graph-api-php-sdk",
+            "version": "v1.0.6",
+            "version_normalized": "1.0.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jstolpe/instagram-graph-api-php-sdk.git",
+                "reference": "2a243c65d69fec9f64a4c36cbd214513609441c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jstolpe/instagram-graph-api-php-sdk/zipball/2a243c65d69fec9f64a4c36cbd214513609441c6",
+                "reference": "2a243c65d69fec9f64a4c36cbd214513609441c6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6|^7.0|^8.0"
+            },
+            "time": "2024-01-03T02:58:46+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Instagram\\": "src/Instagram/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Stolpe",
+                    "homepage": "https://github.com/jstolpe/instagram-graph-api-php-sdk"
+                }
+            ],
+            "description": "Instagram Graph API PHP SDK",
+            "homepage": "https://github.com/jstolpe/instagram-graph-api-php-sdk",
+            "keywords": [
+                "api",
+                "graph api",
+                "instagram",
+                "instagram graph api",
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/jstolpe/instagram-graph-api-php-sdk/issues",
+                "source": "https://github.com/jstolpe/instagram-graph-api-php-sdk/tree/v1.0.6"
+            },
+            "install-path": "../jstolpe/instagram-graph-api-php-sdk"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

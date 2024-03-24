@@ -1,0 +1,95 @@
+.sidebar .sidebar-brand .sidebar-brand-icon {
+  background: url('../img/icona-logo-app-loreal.png') no-repeat center;
+  background-size: contain;
+}
+
+.sidebar .sidebar-brand .sidebar-brand-icon i {
+  transform: none;
+  visibility: hidden;
+}
+
+.sidebar .sidebar-heading, .sidebar .nav-item .nav-link span {
+  font-size: 0.84rem;
+}
+
+.elenco-btn > i {
+  display: none;
+}
+
+.elenco-btn.selected > i {
+  display: inline-block;
+}
+
+#wrapper {
+	position: fixed;
+	overflow: hidden;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+
+nav.navbar {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0px;
+	z-index: 999;
+}
+
+.sidebar.bg-gradient-primary {
+  background: url('../img/bkg-dashboard-stars.png') no-repeat center bottom, linear-gradient(180deg,#283048 40%, #f8cdda 100%);
+  background-size: 100% auto, cover;
+}
+
+.drop-zone {
+  border: 2px #3CA262 dotted;
+  padding: 4rem;
+  text-align: center;
+}
+
+.drop-zone.dz-clickable {
+  cursor: pointer;
+}
+
+.dz-preview.dz-success .dz-success-mark {
+  color:#3CA262;
+}
+
+.dz-preview.dz-success .dz-error-mark {
+  display: none;
+}
+.import-done {
+  border: 2px rgb(162, 60, 60) solid;
+  display: none;
+  margin-bottom: 1.4rem;
+}
+.import-done.success {
+  display: block;
+}
+
+div.docs-list {
+  min-width: 8em;
+}
+
+a.docs-link-pdf, a.docs-link-img {
+  padding: 0.4em 1em;
+  display: inline-block;
+  margin-right: 0.5em;
+  background: rgb(108, 169, 173);  
+  border-radius: 3px;
+  color: #fff !important;
+  cursor: pointer;  
+}
+
+a.docs-link-pdf {
+  background: rgb(173, 108, 124);  
+}
+
+.shac {
+  width: 80%;
+}
+
+div.col > .shac {
+  width: 100%;
+}
+
+div.form-row > div > label {
+  padding-top: 0.4em;
+}
